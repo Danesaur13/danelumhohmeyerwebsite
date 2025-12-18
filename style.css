@@ -1,0 +1,600 @@
+
+
+body {
+  height: 600px;
+
+
+}
+
+
+html {
+
+  scroll-behavior: smooth;
+  background-color: black;
+
+
+
+.image {
+
+
+}
+
+}
+
+.directingbox {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+flex-direction:column;
+gap: 5px;
+
+
+
+  align-items: center;
+
+  top: 75px;
+  left: 10px;
+  width:95%;
+  height:85%;
+  z-index: 10;
+  position:fixed;
+
+
+}
+
+.subbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+
+  gap: 15px;
+
+  height: 400px;
+  width: 70%;
+  z-index: 11;
+
+
+
+
+
+}
+
+
+.poster{
+  display: flex;
+  justify-content: center;
+  width: 325px;
+  height: 325px;
+
+  z-index: 12;
+
+}
+
+.posterdescription {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 400px;
+
+  width: 99%;
+  height: 250px;
+  z-index: 13;
+
+}
+
+.directingworkdesc {
+
+
+
+  font-size: 22px;
+  color: white;
+  line-height: 1.5;
+  text-align: justify;
+
+
+
+
+
+
+}
+
+
+
+
+
+.title {
+color: white;
+text-align: center;
+}
+
+
+
+.title {
+    position: fixed;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 2%;
+    width: 400px;
+    border: 0px solid white;
+    padding: 10px;
+  }
+
+
+.fixedpos {
+
+    color: white;
+    background-color: black;
+    width: 150px;
+    height: 100px;
+    padding: 10px;
+    font-size: 2em;
+    filter:blur(.1px);
+
+
+  position: fixed;
+
+  top:10px;
+  bottom:0px;
+  left:50px;
+  right:0px;
+
+
+}
+
+/*
+
+notes on animation properties
+
+animation-name: example;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+
+good color of pink: #cf7478
+
+  */
+
+
+  .image {
+
+  }
+
+
+
+
+
+
+
+
+  #daneimage {
+
+    height: 90%;
+
+
+    object-fit: cover;
+    object-fit: contain;
+    position: fixed;
+    left: 25%;
+    top: 5%;
+
+
+    border-radius: 15px;
+
+  }
+
+
+  @media all and (max-width: 980px) {
+    #daneimage{
+        margin-left: 0px;
+        left: 250px;
+    }
+}
+
+
+#kohala-pic {
+
+  object-fit: cover;
+  object-fit: contain;
+  width: 55%;
+  border-radius: 15px;
+  position: fixed;
+  top: 18%;
+  right: 10%;
+  border-radius: 15px;
+
+}
+
+
+@media all and (max-width: 1700px) {
+  #kohala-pic {
+      margin-left: 0px;
+      left: 550px;
+  }
+}
+
+  #headshot {
+
+    object-fit: cover;
+    object-fit: contain;
+    height: 80%;
+    border-radius: 15px;
+    position: fixed;
+    top: 15%;
+    right: 15%;
+    border-radius:15px;
+
+
+  }
+
+
+  @media all and (max-width: 1700px) {
+    #headshot {
+        margin-left: 0px;
+        left: 500px;
+    }
+  }
+
+
+  #west10thcover {
+
+
+    object-fit: cover;
+    object-fit: contain;
+    height: 55%;
+    border-radius: 15px;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    left:50%;
+    top: 45%;
+
+
+
+  }
+
+
+
+
+
+#stayingleavingposter {
+
+  border-radius: 15px;
+}
+
+#sounddesc {
+
+  width: 400px;
+
+
+  position: fixed;
+
+  top: 8em;
+  left: 5em;
+
+  font-size: 22px;
+  color: white;
+
+  line-height: 2.0;
+  filter:blur(.1px);
+  max-height: 100px;
+
+}
+
+#gearlisttitle {
+
+  position: fixed;
+  top:260px;
+  left:70px;
+  font-size: 22px;
+  color: white;
+
+}
+
+#equipmentlist {
+
+  width: 425px;
+
+
+  position: fixed;
+
+  top: 310px;
+  left: 50px;
+
+  font-size: 12px;
+  color: white;
+
+  line-height: 25px;
+  filter:blur(.1px);
+  max-height: 100px;
+
+}
+
+
+#contactemail {
+
+  width: 425px;
+
+
+  position: fixed;
+
+  top: 600px;
+  left: 5em;
+
+  font-size: 18px;
+  color: white;
+
+  line-height: 25px;
+  filter:blur(.1px);
+  max-height: 100px;
+
+}
+
+#credits {
+
+
+width:410px;
+font-size: 16px;
+color: white;
+position: fixed;
+left:70px;
+top: 475px;
+line-height: 25px;
+text-align: justify;
+
+}
+
+
+#bio {
+
+  width: 15em;
+  text-indent: 3em;
+
+  position: fixed;
+
+  top: 8em;
+  left: 4em;
+
+  font-size: 22px;
+  color: white;
+  text-align: justify;
+  text-justify: inter-character;
+  line-height: 1.5;
+  filter:blur(.1px);
+  max-height: 100px;
+}
+
+#writingdesc {
+
+  width: 20em;
+  text-indent: 3em;
+
+  position: fixed;
+
+ transform: translate(-50%, -50%);
+ left: 50%;
+ top: 83%;
+
+  font-size: 20px;
+  color: white;
+  text-align: justify;
+  text-justify: inter-character;
+  line-height: 1.5;
+  filter:blur(.1px);
+  max-height: 100px;
+
+}
+
+#kyokoarai {
+
+  width: 15em;
+  text-indent: 3em;
+
+  position: fixed;
+
+  top: 21em;
+  left: 4em;
+
+  font-size: 22px;
+  color: white;
+  text-align: justify;
+  text-justify: inter-character;
+  line-height: 1.5;
+  filter:blur(.1px);
+  max-height: 100px;
+
+}
+
+#info1 {
+
+  position: fixed;
+  top: 36em;
+  left: 6em;
+
+  font-size: 18px;
+  color: white;
+
+}
+
+#info2 {
+
+  position: fixed;
+  top: 38em;
+  left: 6em;
+
+  font-size: 18px;
+  color: white;
+
+}
+
+#info1:hover {
+  color: yellow;
+  text-shadow: .2em .2em purple;
+
+}
+
+
+
+#info2:hover {
+  color: yellow;
+  text-shadow: .2em .2em purple;
+
+}
+
+
+
+
+
+/*
+#headshotdesc {
+
+  position: fixed;
+  color: black;
+  transform: translate(-50%, -50%);
+  z-index: 100%;
+  top: 81%;
+  left: 70%;
+
+}
+*/
+
+
+.link
+
+{
+
+color: white;
+
+
+
+
+}
+
+
+.link:hover {
+color: yellow;
+text-shadow: .2em .2em purple;
+/* box-shadow: 3px 4px 20px white; */
+
+}
+
+.button
+
+{
+  position: fixed;
+  left: 40px;
+
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  text-align: left;
+  color: white;
+  background-color: black;
+  width: 160px;
+  padding: 10px;
+  border: 0px;
+  filter:blur(.1px);
+
+
+
+
+
+
+}
+
+
+button#button1 {
+
+  top: 200px;
+
+
+}
+
+
+button#button2 {
+
+
+  top: 250px;
+
+
+}
+
+
+button#button3 {
+
+
+  top: 300px;
+
+
+}
+
+
+button#button4 {
+
+
+  top: 350px;
+
+
+}
+
+button#backbutton {
+
+  top: 1em;
+
+  font-size: 20px
+}
+
+
+
+
+.button:hover {
+color: yellow;
+text-shadow: .2em .2em purple;
+/* box-shadow: 3px 4px 20px white; */
+
+}
+
+
+
+  .paragraph {
+
+    margin: auto;
+    width: 50%;
+    color: white;
+    text-indent: 10%;
+    opacity: 0.75;
+  }
+
+::-webkit-scrollbar{
+  width: 1.5em;
+}
+
+
+
+::-webkit-scrollbar-track{
+  background-color: pink;
+
+}
+
+
+
+::-webkit-scrollbar-thumb{
+
+  background-color: #A05A5D;
+
+
+}
+
+
+
+
+
+
+* {
+  background-color: black ;}
+
+* {
+  font-family: sans-serif;}
